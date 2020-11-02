@@ -56,7 +56,6 @@ class State:
         # only retrieve keys with valid values
         for k in KEYS_TO_STATE.keys() & data.keys():
             RETURN_CIRCUIT1_DICT[k] = data[k]
-        # print(f"new_dict: {new_dict}")
         RETURN_CIRCUIT1_DICT = {
             KEYS_TO_STATE.get(k, k): v for k, v in RETURN_CIRCUIT1_DICT.items()
         }
